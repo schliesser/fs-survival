@@ -1,0 +1,24 @@
+# System stuff
+.DS_STORE
+
+# Maya
+**/.mayaSwatches
+
+# Editors
+*.sublime-workspace
+*.sublime-project
+
+# Build system
+.fsbuild.yml
+FS19*.zip
+FS19_RM_Seasons*
+
+# IDE
+.idea/
+
+*.exe
+
+node_modules/
+package-lock.json
+translation_gen.js
+.vs/slnx.sqlite

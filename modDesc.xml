@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="53">
+    <title>
+        <en>Survival</en>
+    </title>
+    <description>
+        <de><![CDATA[Härtere Einstellungen für den Kampf ums Überleben.]]></de>
+        <en><![CDATA[Hard settings for survival.]]></en>
+
+    </description>
+    <author>schliesser</author>
+    <version>1.0.0.0</version>
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true"/>
+	<extraSourceFiles>
+		<!-- <sourceFile filename="src/main.lua" /> -->
+		<sourceFile filename="src/noSleep.lua" />
+		<sourceFile filename="src/noLoan.lua" />
+		<sourceFile filename="src/missions.lua" />
+	</extraSourceFiles>
+</modDesc>
