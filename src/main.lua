@@ -1,8 +1,11 @@
 ----------------------------------------------------------------------------------------------------
--- Prevent sleeping
+-- Entry point of FS19_Survival mod
 --
 -- Copyright (c) Schliesser, 2021
 ----------------------------------------------------------------------------------------------------
-function SleepManager:getCanSleep()
-    return false
-end
+
+print('Init survial mod')
+
+source("src/noLoan.lua")
+source("src/noSleep.lua")
+source("src/missions.lua")

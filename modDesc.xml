@@ -12,10 +12,7 @@
     <version>1.0.0.0</version>
     <iconFilename>icon.png</iconFilename>
     <multiplayer supported="true"/>
-	<extraSourceFiles>
-		<!-- <sourceFile filename="src/main.lua" /> -->
-		<sourceFile filename="src/noSleep.lua" />
-		<sourceFile filename="src/noLoan.lua" />
-		<sourceFile filename="src/missions.lua" />
-	</extraSourceFiles>
+    <extraSourceFiles>
+        <sourceFile filename="src/main.lua" />
+    </extraSourceFiles>
 </modDesc>
