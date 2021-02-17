@@ -4,13 +4,26 @@
         <en>Survival</en>
     </title>
     <description>
-        <de><![CDATA[Härtere Einstellungen für den Kampf ums Überleben.]]></de>
-        <en><![CDATA[Hard settings for survival.]]></en>
+        <de><![CDATA[Survival - Versuch nicht zu sterben!
 
+Dieser Mod aktiviert den Kampf ums nackte überleben! Du bist auf dich allein gestellt:
+- Kreditlimit ist auf 0€ gesetzt
+- Fahrzeuge können nicht mehr gemietet werden im Shop und bei Missionen
+- Vergütung bei Missionen angepasst
+- Schlafen ist nicht mehr möglich
+- Keine Helfer für die Feldarbeit]]></de>
+        <en><![CDATA[Survival - Try not to die!
+
+This mod activates the fight for bare survival! You are on your own:
+- Credit limit is set to 0€
+- Vehicles can no longer be rented in the store and missions
+- Compensation for missions adjusted
+- Sleeping is no longer possible
+- No helpers for field work]]></en>
     </description>
     <author>schliesser</author>
     <version>1.0.0.0</version>
-    <iconFilename>icon.png</iconFilename>
+    <iconFilename>icon.dds</iconFilename>
     <multiplayer supported="true"/>
     <extraSourceFiles>
         <sourceFile filename="src/main.lua" />
