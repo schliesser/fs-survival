@@ -9,7 +9,6 @@ IF EXIST %filename% (
 "7z.exe" a -tzip %filename% ^
    -i!*.lua ^
    -i!*.dds ^
-   -i!*.png ^
    -i!*.xml ^
    -xr!.idea ^
    -xr!.git ^
