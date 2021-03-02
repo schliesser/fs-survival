@@ -31,6 +31,7 @@ function SurvivalMissions:loadMap()
     -- Override functions
     InGameMenuContractsFrame.setButtonsForState = Utils.overwrittenFunction(InGameMenuContractsFrame.setButtonsForState, SurvivalMissions.setButtonsForState)
     MissionManager.hasFarmActiveMission = Utils.overwrittenFunction(MissionManager.hasFarmActiveMission, SurvivalMissions.hasFarmActiveMission)
+    MapHotspot.render = Utils.overwrittenFunction(MapHotspot.render, SurvivalMissions.mapHotSpotRender)
 end
 
 function SurvivalMissions:update(dt)
@@ -89,7 +90,7 @@ function SurvivalMissions:hasFarmActiveMission(superFunc, farmId)
 	return false
 end
 
-function SurvivalMissions.colorForFarm(farmId)
+function SurvivalMissions:colorForFarm(farmId)
     local farm = g_farmManager:getFarmById(farmId)
     if farm ~= nil then
         local color = Farm.COLORS[farm.color]
@@ -100,11 +101,10 @@ function SurvivalMissions.colorForFarm(farmId)
     return 1, 1, 1, 1
 end
 
-function MapHotspot:render(minX, maxX, minY, maxY, scale, drawText)
+function SurvivalMissions:mapHotSpotRender(superFunc, minX, maxX, minY, maxY, scale, drawText)
     if self:getIsVisible() and self.enabled then
         scale = scale or 1
 
-        -- draw bg
         self.overlayBg:setDimension(self.width * self.zoom * scale, self.height * self.zoom * scale)
         self.overlayBg:setPosition(self.x, self.y)
 
