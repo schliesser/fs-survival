@@ -9,23 +9,38 @@
 Dieser Mod aktiviert den Kampf ums nackte überleben! Du bist auf dich allein gestellt:
 - Kreditlimit ist auf 0€ gesetzt
 - Fahrzeuge können nicht mehr gemietet werden im Shop und bei Missionen
-- Vergütung bei Missionen angepasst
+- Vergütung bei Missionen verringert
 - Schlafen ist nicht mehr möglich
-- Keine Helfer für die Feldarbeit]]></de>
+- Keine Helfer für die Feldarbeit
+- Maximal drei Missionen pro Hof gleichzeitig
+- Neue Missionen alle 30 Minuten
+- Mehr Missionen verfügbar]]></de>
         <en><![CDATA[Survival - Try not to die!
 
 This mod activates the fight for bare survival! You are on your own:
 - Credit limit is set to 0€
 - Vehicles can no longer be rented in the store and missions
-- Compensation for missions adjusted
+- Compensation for missions reduced
 - Sleeping is no longer possible
-- No helpers for field work]]></en>
+- No helpers for field work
+- Max three missions per farm
+- New missions every 30 minutes
+- More missions available]]></en>
     </description>
     <author>schliesser</author>
-    <version>1.0.0.0</version>
+    <version>1.1.0.0</version>
     <iconFilename>icon.dds</iconFilename>
     <multiplayer supported="true"/>
     <extraSourceFiles>
-        <sourceFile filename="src/main.lua" />
+        <sourceFile filename="src/survival.lua" />
+        <sourceFile filename="src/survivalMissions.lua" />
     </extraSourceFiles>
+    <l10n>
+		<text name="leasing_disabled">
+			<en>Leasing is disabled!</en>
+			<de>Mieten ist deaktiviert!</de>
+			<fr>Le crédit-bail est désactivé!</fr>
+			<it>Il leasing è disabilitato!</it>
+		</text>
+	</l10n>
 </modDesc>
