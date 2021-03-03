@@ -158,7 +158,7 @@ function SurvivalMissions:mapHotSpotRender(superFunc, minX, maxX, minY, maxY, sc
 
                 renderText(posX, posY - 1 / g_screenHeight, self.textSize * self.zoom * scale, self.fullViewName)
 
-                local r, g, b, _ = SurvivalMissions.colorForFarm(mission.farmId)
+                local r, g, b, _ = SurvivalMissions:colorForFarm(mission.farmId)
                 setTextColor(r, g, b, alpha)
 
                 renderText(posX + 1 / g_screenWidth, posY, self.textSize * self.zoom * scale, self.fullViewName)
