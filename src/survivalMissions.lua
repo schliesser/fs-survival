@@ -18,6 +18,8 @@ function SurvivalMissions:loadMap()
     SowMission.REWARD_PER_HA = 500
     SprayMission.REWARD_PER_HA = 150
     SprayMission.REIMBURSEMENT_PER_HA = 200
+    BaleMission.REWARD_PER_HA_HAY = 2000
+    BaleMission.REWARD_PER_HA_SILAGE = 2500
 
 
     -- Mission generation
