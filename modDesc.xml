@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="53">
+<modDesc descVersion="61">
+    <author>schliesser</author>
+    <version>2.0.0.0</version>
     <title>
         <en>Survival</en>
     </title>
@@ -27,20 +29,10 @@ This mod activates the fight for bare survival! You are on your own:
 - New missions every 30 minutes
 - More missions available]]></en>
     </description>
-    <author>schliesser</author>
-    <version>1.1.0.0</version>
     <iconFilename>icon.dds</iconFilename>
     <multiplayer supported="true"/>
     <extraSourceFiles>
         <sourceFile filename="src/survival.lua" />
         <sourceFile filename="src/survivalMissions.lua" />
     </extraSourceFiles>
-    <l10n>
-		<text name="leasing_disabled">
-			<en>Leasing is disabled!</en>
-			<de>Mieten ist deaktiviert!</de>
-			<fr>Le crédit-bail est désactivé!</fr>
-			<it>Il leasing è disabilitato!</it>
-		</text>
-	</l10n>
 </modDesc>

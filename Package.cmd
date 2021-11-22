@@ -1,12 +1,12 @@
 @ECHO off
 
-SET filename="FS19_Survival.zip"
+SET filename="FS22_Survival.zip"
 
 IF EXIST %filename% (
     DEL  %filename% > NUL
 )
 
-"7z.exe" a -tzip %filename% ^
+"7z" a -tzip %filename% ^
    -i!*.lua ^
    -i!*.dds ^
    -i!*.xml ^
@@ -16,4 +16,4 @@ IF EXIST %filename% (
 
 IF %ERRORLEVEL% NEQ 0 ( exit 1 )
 
-PAUSE
+exit

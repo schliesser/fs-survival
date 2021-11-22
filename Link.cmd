@@ -1,8 +1,8 @@
 @echo off
 
-set modName=FS19_Survival
+set modName=FS22_Survival
 rem the profile path
-set gameProfile=%UserProfile%/Documents/My Games/FarmingSimulator2019/
+set gameProfile=%UserProfile%/Documents/My Games/FarmingSimulator2022/
 set branch = %cd%
 
 rem DO NOT EDIT BELOW

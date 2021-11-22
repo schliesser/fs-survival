@@ -3,8 +3,8 @@
 
 # Build system
 .fsbuild.yml
-FS19*.zip
-FS19_Survival*
+FS22*.zip
+FS22_Survival*
 
 # IDE
 .idea/
