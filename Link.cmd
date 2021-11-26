@@ -3,7 +3,10 @@
 set modName=FS22_Survival
 rem the profile path
 set gameProfile=%UserProfile%/Documents/My Games/FarmingSimulator2022/
+echo %gameProfile%
 set branch = %cd%
+
+exit
 
 rem DO NOT EDIT BELOW
 

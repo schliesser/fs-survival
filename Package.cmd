@@ -10,6 +10,9 @@ IF EXIST %filename% (
    -i!*.lua ^
    -i!*.dds ^
    -i!*.xml ^
+   -xr!icon ^
+   -xr!screenshots ^
+   -xr!.vscode ^
    -xr!.idea ^
    -xr!.git ^
    -aoa -r ^

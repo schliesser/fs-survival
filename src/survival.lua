@@ -7,7 +7,7 @@ Survival = {}
 Survival.name = "Survival"
 
 function Survival:loadMap()
-    print('Survival: Try not to die!')
+    print('Survival: Difficulty raised!')
 
     -- disable AI
     g_currentMission.disableAIVehicle = true
