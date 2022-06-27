@@ -1,6 +1,7 @@
 @ECHO off
 
-SET filename="FS22_Survival.zip"
+SET modName=FS22_AdminToolBox
+SET filename=%modName%.zip
 
 IF EXIST %filename% (
     DEL  %filename% > NUL
@@ -10,13 +11,10 @@ IF EXIST %filename% (
    -i!*.lua ^
    -i!*.dds ^
    -i!*.xml ^
-   -xr!icon ^
-   -xr!screenshots ^
+   -xr!resources ^
    -xr!.vscode ^
    -xr!.idea ^
    -xr!.git ^
    -aoa -r ^
 
 IF %ERRORLEVEL% NEQ 0 ( exit 1 )
-
-exit
