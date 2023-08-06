@@ -23,6 +23,9 @@ function Survival:loadMap()
 
     -- override sleep check
     SleepManager.getCanSleep = Utils.overwrittenFunction(SleepManager.getCanSleep, Survival.disableFunction)
+
+    -- override animal trigger
+    -- AnimalLoadingTrigger.showAnimalScreen = Utils.overwrittenFunction(AnimalLoadingTrigger.showAnimalScreen, Survival.showAnimalScreen)
 end
 
 -- prevent leasing in shop
@@ -33,6 +36,33 @@ end
 -- return false to disable overwritten function
 function Survival:disableFunction()
     return false
+end
+
+function Survival:showAnimalScreen(husbandary)
+    if husbandry == nil and self.loadingVehicle == nil then
+		g_gui:showInfoDialog({
+			text = g_i18n:getText("shop_messageNoHusbandries")
+		})
+
+		return
+	end
+
+	local controller = nil
+
+	if husbandry ~= nil and self.loadingVehicle == nil then
+        print('Survival: change this method?!')
+		controller = AnimalScreenDealerFarm.new(husbandry)
+	elseif husbandry == nil and self.loadingVehicle ~= nil then
+		controller = AnimalScreenDealerTrailer.new(self.loadingVehicle)
+	else
+		controller = AnimalScreenTrailerFarm.new(husbandry, self.loadingVehicle)
+	end
+
+	if controller ~= nil then
+		controller:init()
+		g_animalScreen:setController(controller)
+		g_gui:showGui("AnimalScreen")
+	end
 end
 
 addModEventListener(Survival)

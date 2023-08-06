@@ -8,6 +8,8 @@ This mod presents you with real challenges! You are on your own:
 - No AI helpers
 - New missions every 30 minutes
 - More missions available
+- Productions only support output mode "store"
+- Animals must be transfered with a trailer
 
 This is a script mod for Farming Simulator 22.
 
